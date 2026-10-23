@@ -2,11 +2,7 @@
 
 Data release site for the **GION** multi-wavelength simulation suite.
 
-This repository hosts the documentation, metadata tables, download scripts and tutorial notebooks for the public GION data products. The data themselves are served from:
-
-```text
-https://ipomoea-www.cc.u-tokyo.ac.jp/q75000/GION_QDR/
-```
+This repository hosts the documentation, metadata tables, download scripts and tutorial notebooks for the public GION data products.
 
 ## Contents
 
@@ -123,7 +119,7 @@ Each file has two groups:
   > **Note:** the `Redshift` attribute (and the corresponding `ScaleFactor`) is **not** the redshift of the shell or of its halos. It is a temporary value taken from the simulation snapshot; do not use it.
 - `Subhalo` (datasets) — halo properties, e.g. `Position` (comoving, h⁻¹ Mpc, observer at the origin) and `Mvir` (h⁻¹ M☉).
 
-The data columns largely follow those of [MPI-Rockstar](https://github.com/Tomoaki-Ishiyama/mpi-rockstar/); refer to that repository for the definition of each column. The catalogues do not store halo redshifts; compute them from the comoving distance (see [`GION_lc_halo.ipynb`](GION_lc_halo.ipynb)).
+The data columns largely follow those of [MPI-Rockstar](https://github.com/Tomoaki-Ishiyama/mpi-rockstar/); refer to the [documentation](https://mpi-rockstar.readthedocs.io/en/latest/index.html) for the definition of each column. The catalogues do not store halo redshifts; compute them from the comoving distance (see [`GION_lc_halo.ipynb`](GION_lc_halo.ipynb)).
 
 ## Convergence maps
 
@@ -171,7 +167,7 @@ The notebooks assume the data have been downloaded into `lc_halo_props/` and `le
 
 ## Full data set
 
-The QDR is a subset of the GION simulation suite. We will release the full dataset after the paper is accepted. If you need the full data set (e.g. other redshift ranges, full 10 realizations, other maps) in advance, please contact Ken Osato ([ken.osato@chiba-u.jp](mailto:ken.osato@chiba-u.jp)).
+The QDR is a subset of the GION simulation suite. We will release the full dataset after the paper is accepted. If you need the full data set (e.g. other redshift ranges, full 10 realizations, maps of other observables) in advance, please contact Ken Osato ([ken.osato@chiba-u.jp](mailto:ken.osato@chiba-u.jp)).
 
 ## Citation and acknowledgement
 
