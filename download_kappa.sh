@@ -1,5 +1,5 @@
 #!/bin/sh
-# Download weak-lensing convergence maps of the GION Quick Data Release.
+# Download weak lensing convergence maps of the GION Quick Data Release.
 #
 # Usage: sh download_kappa.sh [-j N] ZS_IDX [ZS_IDX ...]
 #        sh download_kappa.sh [-j N] all

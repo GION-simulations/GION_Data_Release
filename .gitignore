@@ -1,5 +1,6 @@
 lc_halo_props/
 lensing_maps/
+SZ_maps/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
