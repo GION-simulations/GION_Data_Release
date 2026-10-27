@@ -27,7 +27,7 @@ The Quick Data Release provides a first subset of the GION full-sky light-cone p
 | Product | Redshift range | Format | Location | Total size |
 | --- | --- | --- | --- | --- |
 | Light-cone halo catalogues | 0.0 ≤ z ≲ 1.52 (24 shells) | HDF5 | `lc_halo_props/S080` – `lc_halo_props/S103` | 2.33 TB (14,004 files) |
-| Weak-lensing convergence maps | 0.50 ≲ z_s ≲ 1.50 (69 source planes) | HEALPix FITS, Nside = 8192 | `lensing_maps/` | 445 GB (6.44 GB per map) |
+| Weak lensing convergence maps | 0.50 ≲ z_s ≲ 1.50 (69 source planes) | HEALPix FITS, Nside = 8192 | `lensing_maps/` | 445 GB (6.44 GB per map) |
 
 The data are large: check the sizes below and your free disk space before downloading. Most analyses need only a few shells or maps.
 
@@ -123,7 +123,7 @@ The data columns largely follow those of [MPI-Rockstar](https://github.com/Tomoa
 
 ## Convergence maps
 
-The directory `lensing_maps` contains full-sky weak-lensing convergence (κ) maps computed with the Born approximation. The maps are in HEALPix format with Nside = 8192.
+The directory `lensing_maps` contains full-sky weak lensing convergence (κ) maps computed with the Born approximation. The maps are in HEALPix format with Nside = 8192.
 
 - File name: `GION_r000_kappa.<zs_idx>.fits`
 - `zs_idx` is the source-plane index; the corresponding source redshifts are listed in [`zs_kappa.txt`](zs_kappa.txt).
@@ -173,16 +173,23 @@ The QDR is a subset of the GION simulation suite. We will release the full datas
 
 If you use the GION data in your work, please cite the GION Overview paper:
 
-> Osato et al., 2026 (arXiv:XXXX.XXXXX)
+> Osato et al., 2026 (arXiv:2610.32388)
 
 ```bibtex
-@article{GION,
-  author  = {TBD},
-  title   = {TBD},
-  journal = {TBD},
-  year    = {TBD},
-  eprint  = {XXXX.XXXXX},
-  archivePrefix = {arXiv}
+@ARTICLE{GION_Overview,
+       author = {{Osato}, Ken and {Tanaka}, Satoshi and {Ishiyama}, Tomoaki and {Miyatake}, Hironao and {Nishimichi}, Takahiro and {Shirasaki}, Masato},
+        title = "{Introducing the GION Lightcone Simulation Suite for Multi-Wavelength Large-Scale Structure Cosmology}",
+      journal = {arXiv e-prints},
+     keywords = {Cosmology and Nongalactic Astrophysics},
+         year = 2026,
+        month = oct,
+          eid = {arXiv:2610.32388},
+        pages = {arXiv:2610.32388},
+archivePrefix = {arXiv},
+       eprint = {2610.32388},
+ primaryClass = {astro-ph.CO},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2026arXiv261032388O},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }
 ```
 
